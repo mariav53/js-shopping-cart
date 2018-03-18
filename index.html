@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <img src="img/logo.jpg" id="logo">
+        </div>
+        <div class="two columns u-pull-right">
+          <ul>
+            <li class="submenu">
+              <img src="img/cart.png" id="img-carrito">
+              <div id="carrito">
+                <table id="lista-carrito" class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="lista-cursos">
+    <h1 id="encabezado__cursos">Cursos En Línea</h1>
+
+    <div class="cursos__container">
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>HTML5, CSS3, JavaScript para Principiantes</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito" data-id="1"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Curso de Comida Vegetariana</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito" data-id="2"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso3.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Guitarra para Principiantes</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="3"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso4.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Huerto en tu casa</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="4"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso5.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Decoración con productos de tu hogar</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="5"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Diseño Web para Principiantes</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="6"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Comida Mexicana para principiantes</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="7"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso3.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Estudio Musical en tu casa</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito"  data-id="8"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso4.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Cosecha tus propias frutas y verduras</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#" class="agregar-carrito"  data-id="9"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso5.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>Prepara galletas caseras</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="10"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso1.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>JavaScript Moderno con ES6</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="11"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+
+      <div class="curso__item">
+        <div class="curso__card">
+          <img src="img/curso2.jpg" class="imagen__curso">
+          <div class="info__card">
+            <h4>100 Recetas de Comida Natural</h4>
+            <img src="img/estrellas.png">
+            <p><span class="precio">$200</span> <span class="discount">$15</span>  </p>
+            <a href="#"  class="agregar-carrito"  data-id="12"><i class="fa fa-cart-plus"></i>&nbsp;  AGREGAR AL CARRITO</a>
+          </div>
+        </div> <!--.card-->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

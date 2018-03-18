@@ -1,0 +1,147 @@
+body{
+  overflow-x: hidden;
+  background: #fff;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+h1 {
+  text-align: center;
+}
+.info__card h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  padding: 20px 0 0 0;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.logo__container {
+  width: 50%;
+  margin-left: 20px;
+}
+.carrito__container {
+  width: 50%;
+}
+.carrito__container ul{
+  float: right;
+  margin-right: 30px;
+}
+.submenu {
+  position: relative;
+  list-style-type: none;
+  width: 50%;
+}
+.submenu #carrito{
+  display: none;
+}
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+.vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#lista-cursos {
+  padding: 30px 0;
+}
+.encabezado__cursos{
+  margin-bottom: 30px;
+}
+.cursos__container{
+  margin-top: 30px;
+  display: grid;
+  grid-gap: 25px;
+	max-width: 1080px;
+	margin: 0 auto;
+  padding: 0 10px;
+}
+.curso__item{
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card__img, .imagen__curso{
+  width: 100%;
+}
+.info__card{
+  padding: 10px 10px;
+  position: relative;
+  height: 160px;
+}
+.info__card *{
+  margin-bottom: 10px;
+}
+.precio{
+  text-decoration: line-through;
+  color: red;
+}
+.discount{
+  color: black;
+  font-weight: bold;
+  float: right;
+  font-size: 1.25em;
+}
+.agregar-carrito{
+  background: #00B2BD;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+}
+.agregar-carrito:hover{
+  background: #00828a;
+  color: white;
+}
+.fa{    margin-bottom: 0;}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+@media (min-width: 472px) and (max-width: 767px) {
+  .cursos__container{
+   grid-template-columns: 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 768px) {
+   .cursos__container{
+   grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+ @media all and (min-width: 949px) {
+   .cursos__container{
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+ }
